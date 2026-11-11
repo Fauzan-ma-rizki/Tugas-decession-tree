@@ -32,7 +32,6 @@ rf.fit(X_train, y_train)
 y_pred = rf.predict(X_test)
 acc = accuracy_score(y_test, y_pred)
 
-# Menampilkan hasil evaluasi dan penjelasan di terminal
 print("HASIL EVALUASI MODEL RANDOM FOREST")
 print(f"Data Latih (Train) : {len(X_train)} baris")
 print(f"Data Uji (Test)    : {len(X_test)} baris")
@@ -48,7 +47,7 @@ print(classification_report(y_test, y_pred))
 plt.figure(figsize=(15, 6))
 
 for i in range(10):
-    plt.subplot(2, 5, i+1) # Grid 2 baris x 5 kolom
+    plt.subplot(2, 5, i+1) 
     plot_tree(rf.estimators_[i], 
               feature_names=list(X.columns), 
               class_names=list(map(str, rf.classes_)), 
