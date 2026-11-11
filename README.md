@@ -8,7 +8,7 @@ data latih 10.py : Script untuk Skenario 1 (Menggunakan 11 data awal).
 semua data.py : Script untuk Skenario 2 (Menggunakan seluruh data).
 
 🚀 Skenario Pengujian
-Skenario 1: Pengujian Data Terbatas (Poin 1 & 2 Tugas)
+Skenario 1: Pengujian Data Terbatas 
 Dataset: Menggunakan 10 baris pertama sebagai data latih (Train) dan baris ke-11 sebagai data uji (Test).
 
 Parameter Model: 5 Pohon Keputusan (n_estimators=5), maksimal 1 fitur (max_features=1), kedalaman maksimal 1 (max_depth=1).
